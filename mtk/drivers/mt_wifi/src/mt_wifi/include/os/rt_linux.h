@@ -817,7 +817,7 @@ void linux_pci_unmap_single(void *handle, ra_dma_addr_t dma_addr, size_t size, i
 
 #define SKB_BUF_HEADTAIL_RSV	(SKB_BUF_HEADROOM_RSV + SKB_BUF_TAILROOM_RSV)
 /* Need to do below miniume size protect for build_skb method, to avoid DATAABORT issue. */
-#define SKB_BUF_MINIMUN_SIZE	(1984)
+#define SKB_BUF_MINIMUN_SIZE	(2048)
 
 
 #ifdef CONFIG_WIFI_BUILD_SKB
