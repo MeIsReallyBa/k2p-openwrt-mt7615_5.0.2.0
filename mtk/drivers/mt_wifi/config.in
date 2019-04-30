@@ -268,7 +268,7 @@ config MTK_DBDC_MODE
 	depends on MTK_CHIP_MT7615E || MTK_CHIP_MT7626
 	select MULTI_PROFILE_SUPPORT
 	select DEFAULT_5G_PROFILE
-	default n
+	default y
 
 config MTK_MULTI_PROFILE_SUPPORT
         bool "Multi Profile Support"
@@ -279,7 +279,7 @@ config MTK_DEFAULT_5G_PROFILE
 	bool "5G default profile for DBDC"
 	depends on MTK_DBDC_MODE
 #	depends on MTK_MULTI_PROFILE_SUPPORT
-	default y
+	default n
 
 config MTK_WSC_INCLUDED
 	bool "WSC (WiFi Simple Config)"
