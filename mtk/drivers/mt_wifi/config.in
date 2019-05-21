@@ -475,7 +475,7 @@ config MTK_UAPSD
 config MTK_TCP_RACK_SUPPORT
 	bool "TCP Reduced ACK  support"
 	depends on MTK_WIFI_DRIVER
-	default n
+	default y
 
 #### PA_LNA_Type choice
 
