@@ -72,7 +72,7 @@ define Package/mtk-luci-plugin/install
 endef
 
 define Package/mtk-luci-plugin/conffiles
-        /etc/wireless/
+        /etc/wireless/mt*/mt*.dat
 endef
 
 
