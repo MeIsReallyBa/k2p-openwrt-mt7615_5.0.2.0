@@ -71,5 +71,9 @@ define Package/mtk-luci-plugin/install
 	$(call Package/common/install,$(1),luci-app-webconsole)
 endef
 
+define Package/mtk-luci-plugin/conffiles
+        /etc/wireless/mt*/mt*.dat
+endef
+
 
 $(eval $(call BuildPackage,mtk-luci-plugin))
